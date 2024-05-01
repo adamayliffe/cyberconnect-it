@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Technical-Resources | CCIT Admin Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/ccit.JPG">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+
+/* Dropdown button */
+.dropbtn {
+  background-color: #F5F6FA;
+  color: #333;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Dropdown button with logo */
+.logo {
+  width: 50px; /* Adjust as needed */
+  height: 30px; /* Adjust as needed */
+  margin-right: 8px; /* Adjust as needed */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F5F6FA;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #F5F6FA;
+}
+
+     </style>
+   </head>
+<body>
+
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-kubernetes'></i>
+      <span class="logo_name">Stream Line Admin</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="/cyberconnect-it/admin-portal/dashboard/">
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="/cyberconnect-it/admin-portal/dashboard/Technical-Resources">
+            <span class="links_name">Technical Resources</span>
+          </a>
+        </li>
+        <li>
+          <a href="/cyberconnect-it/admin-portal/dashboard/Support-Services">
+            <span class="links_name">Support Services</span>
+          </a>
+        </li>
+        <li>
+          <a href="/cyberconnect-it/admin-portal/dashboard/Company-Network"  class="active">
+            <span class="links_name">Company Network</span>
+          </a>
+        </li>
+        <li>
+          <a href="/cyberconnect-it/admin-portal/dashboard/Stock">
+            <span class="links_name">Stock</span>
+          </a>
+        </li>
+        <li>
+          <a href="/cyberconnect-it/admin-portal/dashboard/Orders">
+            <span class="links_name">Orders</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <img src="images/ccit.JPG" alt="Logo" class="logo"> CCIT Admin
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/cyberconnect-it/admin-portal/dashboard/Chat-Room">Chat Room</a>
+          <a href="/cyberconnect-it/admin-portal/logged-out/">Log Out</a>
+          <a href="#">Holidays</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box" style="background-color: skyblue;">
+          <div class="right-side">
+            <a href="/cyberconnect-it/admin-portal/dashboard/Folders/Documents/" style="color: black; text-decoration: none;">
+              <div class="box-topic">Documents</div>
+            </a>
+          </div>
+        </div>
+        <div class="box" style="background-color: skyblue;">
+          <div class="right-side">
+           <a href="/cyberconnect-it/admin-portal/dashboard/Folders/Clients/" style="color: black; text-decoration: none;">
+            <div class="box-topic">Clients</div>
+           </a>
+          </div>
+        </div>
+        <div class="box" style="background-color: skyblue;">
+          <div class="right-side">
+           <a href="/cyberconnect-it/admin-portal/dashboard/Folders/Engineering/" style="color: black; text-decoration: none;">
+            <div class="box-topic">Engineering</div>
+           </a>
+          </div>
+        </div>
+        <div class="box" style="background-color: skyblue;">
+          <div class="right-side">
+            <a href="/cyberconnect-it/admin-portal/dashboard/Folders/Management/" style="color: black; text-decoration: none;">
+              <div class="box-topic">Management</div>
+            </a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+
+
+</body>
+</html>
