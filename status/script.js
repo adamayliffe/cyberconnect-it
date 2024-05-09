@@ -33,4 +33,6 @@ setInterval(function() {
     checkWebsite('https://adamayliffe.github.io/cyberconnect-it/client-portal/support-center/', document.querySelectorAll('.monitor')[5]);
     checkWebsite('https://adamayliffe.github.io/cyberconnect-it/voip-portal/support-center/', document.querySelectorAll('.monitor')[6]);
     checkWebsite('https://adamayliffe.github.io/cyberconnect-it/login/voip-login/', document.querySelectorAll('.monitor')[7]);
+    checkWebsite('https://adamayliffe.github.io/cyberconnect-it/login/document-library-login/', document.querySelectorAll('.monitor')[8]);
+    checkWebsite('https://adamayliffe.github.io/cyberconnect-it/DocumentLibrary/', document.querySelectorAll('.monitor')[9]);
 }, 1000); // Check every 1 seconds
